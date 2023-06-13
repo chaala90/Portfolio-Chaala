@@ -1,0 +1,41 @@
+ .ListContainer {
+        width: 100%;
+    /* max-width: 1200px; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    margin-bottom: 64px;
+   
+      }
+     /* .Title {
+        font-size: 50px;
+    
+     text-align: center;
+        margin: 0;
+        color: #673D7D;
+        margin-top: 64px;
+      }*/
+      p {
+        margin: 0;
+      }
+      
+      .row {
+        display: flex;
+        justify-content: space-around;
+      }
+      .col {
+        display: flex;
+        flex-direction: column;
+        margin: 16px;
+      }
+      
+      .Pagination {
+        a {
+          color: white;
+          text-decoration: none;
+          display: inline;
+          margin: 2px;
+        }
+      }
+      
