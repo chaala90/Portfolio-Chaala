@@ -5,8 +5,7 @@
     align-items: center;
     position: relative;
     @include mobile-only {
-    background-color:#A74A67 ;
-    color: #fff;
+   
 }}
 .arrow--up{
   width: 3%;
@@ -53,8 +52,8 @@ i{
     color: white;
     margin-left: 5em;
     @include mobile-only {
-    margin-left: 3em;
-    font-size: 0.6em;
+      margin-left: 1em;
+      font-size: 0.4em;
     }}
          .socialinks{
         display: flex;

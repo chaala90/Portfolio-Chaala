@@ -16,25 +16,18 @@
     transform: translateY(0%);
   }
 }
+
  .ListContainer {
-        width: 100%;
-    /* max-width: 1200px; */
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    /*margin-top: 64px;
+    margin-bottom: 64px;*/
     animation: 5s anim-lineUp ease-in-out forwards;
-   
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
       }
-     /* .Title {
-        font-size: 50px;
-    
-     text-align: center;
-        margin: 0;
-        color: #673D7D;
-        margin-top: 64px;
-      }*/
       p {
         margin: 0;
       }

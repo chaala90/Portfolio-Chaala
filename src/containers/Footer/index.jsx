@@ -26,7 +26,7 @@ const Footer = () => {
 </a>
 </li>
 </ul>
-    <p className="copyright"> © 2023 Chaala DHIFALLAH, Tous droits réservés.</p>
+    <p className="copyright">©2023 Chaala DHIFALLAH, Tous droits réservés.</p>
     <Link
           to="flexlink"
           spy={true}

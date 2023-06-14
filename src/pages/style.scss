@@ -15,7 +15,10 @@ margin-top: 64px;
 font-family: 'Source Code Pro', monospace;
 text-transform: uppercase;
 letter-spacing: 3px;
-  cursor: pointer
+cursor: pointer;
+@include mobile-only {
+font-size: 33px;
+}
 }
 h2 span{
   transition: .5s linear;
