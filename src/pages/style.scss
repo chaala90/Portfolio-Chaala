@@ -40,7 +40,9 @@ h2:hover span{
 }
 .topskil{
   margin-top: -44em;
-}
+  @include mobile-only {
+  margin-top: -53em;
+}}
 .smoke-loader {
     width: 100px;
     height: 100px;
