@@ -14,6 +14,29 @@ text-align: center;
 margin-top: 64px;
 font-family: 'Source Code Pro', monospace;
 text-transform: uppercase;
+letter-spacing: 3px;
+  cursor: pointer
+}
+h2 span{
+  transition: .5s linear;
+}
+h2:hover span:nth-child(1){
+  margin-right: 3px;
+}
+h2:hover span:nth-child(1):after{
+  content: "";
+}
+h2:hover span:nth-child(2){
+  margin-left: 10px;
+}
+h2:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+.topskil{
+  margin-top: -44em;
 }
 .smoke-loader {
     width: 100px;
@@ -95,116 +118,3 @@ text-transform: uppercase;
     50% {opacity: 1;  }
     100% { top: 29px; height: 15px; width: 6px; opacity: 0;}
   }
-//old scss à trier 
-  /*main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: blue;
-  }
-  
-  .ServicesContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    > * {
-      z-index: 1;
-    }
-    .ListContainer {
-      width: 100%;
-    }
-    &::after {
-      background-color: white;
-      position: absolute;
-      content: "";
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      bottom: 32px;
-      z-index: 0;
-      clip-path: ellipse(171% 100% at 58.47% 0%);
-    }
-  }*/
-  
-  /*.EventsContainer {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    .Title {
-      color: #673D7D;
-    }
-  }
-  
-  .PeoplesContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    position: relative;
-    > * {
-      z-index: 1;
-    }
-    padding-bottom: 120px;
-    &::after {
-      background-color: white;
-      position: absolute;
-      content: "";
-      display: inline-block;
-      width: 100%;
-      height: calc(100% - 32px);
-      bottom: 32px;
-      z-index: 0;
-      clip-path: ellipse(171% 100% at 58.47% 0%);
-    }
-  }
-  .FormContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 32px;
-    .Title {
-      color: white;
-      margin-bottom: 64px;
-    }
-    span {
-      color: white;
-    }
-    .Button {
-      width: 207px;
-      margin-top: 32px;
-    }
-  }
- 
-  
-  .SliderContainer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: -32px;
-    background-color: white;
-    width: 100%;
-  }
-  
-    .presta {
-      width: 35%;
-      border-right: 1px solid rgba(91, 50, 255, 0.2);
-    }
-  
-    .description {
-      width: 45%;
-      border-left: 1px solid rgba(91, 50, 255, 0.2);
-      padding: 0px 64px 0px 64px;
-    }
-  
-    address {
-      text-decoration: none;
-      text-transform: none;
-      font-style: normal;
-    }
-  
-  */

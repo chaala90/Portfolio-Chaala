@@ -26,9 +26,9 @@ const Page = () => {
       <About /> 
       </div>
    </section>
-   <section >
+   <section className="topskil">
     <div>
-      <h2 className="Title">Mes skills</h2>
+    <h2 className="Title"><span>Mes</span> <span>skills</span></h2>
       <Slider />
       </div>
       </section>
@@ -36,12 +36,12 @@ const Page = () => {
       <Collapse />
     </section>
       <section className="EventsContainer">
-        <h2 className="Title" id="nos-realisations">Mes projets</h2>
+      <h2 className="Title" id="nos-realisations"><span>Mes</span> <span>projets</span></h2>
         <ProjectList />
       </section>
       <div className="FormContainer" id="contact">
         <div className="row">
-        <h2 className="Title">LET'S TALK</h2>
+        <h2 className="Title"><span>LET</span>'S <span>TALK</span></h2>
         <div className="smoke-loader">
   <div className="smoke-wave">
     <div className="smoke1"></div>

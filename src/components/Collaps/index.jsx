@@ -52,7 +52,7 @@ const Collapse = () => {
               data.experiences.map((experience) => (
                 <div key={experience.id}>
                   <h4>{experience.date}</h4> <p>{experience.title}</p>
-                  {/*<br />*/}
+                  <p>{experience.description}</p>
                 </div>
               ))}
           </div>

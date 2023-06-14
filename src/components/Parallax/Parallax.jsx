@@ -113,7 +113,7 @@ const Parallax = () => {
 
     return (
         <div id="parallax" className="parallax-outer">
-            <div ref={parallaxRef} style={{ background: `linear-gradient(#778da9, #778da9 ${background}%, #A74A67, #EDFC54 )` }} className='parallax'>
+<div ref={parallaxRef} style={{ background: `linear-gradient(#778da9, #778da9 ${background}%, #a3b18a, #00FF00 )` }} className='parallax'>
                 <img ref={mountain3} className='mountain-3' alt="mountain" src="/paralax/mountain-3.svg" />
                 {/*<img ref={mountain2} className='mountain-2' alt="mountain" src="/paralax/mountain-2.svg" />
                 <img ref={mountain1} className='mountain-1' alt="mountain" src="/paralax/mountain-1.svg" />

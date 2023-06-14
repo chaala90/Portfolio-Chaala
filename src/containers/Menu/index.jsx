@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import "./Menu.scss";
 
@@ -16,7 +15,7 @@ const Menu = () => {
         <h1>dhifallah chaala.</h1>
         <p>Web Developer</p>
       </div>
-      <div className={`flexLink ${isMenuClicked ? "responsive_nav" : ""}`}>
+      <div id="flexlink" className={`flexLink ${isMenuClicked ? "responsive_nav" : ""}`}>
         <Link
           to="flexlink"
           className="navbar"

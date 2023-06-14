@@ -1,8 +1,18 @@
 @import "../../containers//endpoints.scss";
+@keyframes defilement-rtl {
+  0% {
+    transform: translateX(0);      /* position initiale à droite */
+  }
+  
+  100% {
+    transform: translateX(-320px);  /* position finale à gauche */
+  }}
 .skills{
   width: 50%;
+  animation: defilement-rtl 20s infinite linear;
   @include mobile-only {
-  margin-left: 4em;}
+  margin-left: 4em;
+  }
 }
 .border{
 margin-top: 1em;

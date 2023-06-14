@@ -3,8 +3,13 @@ import cv from "./CV chaala.pdf"
 const About = () => {
     return(
         <>
-<h1>Hello,</h1>
-{/*<h2> Web Developer</h2>*/}
+        <div className="container">
+<h1>Hello, I'm</h1>
+<div class="animation">
+    <div class="first"><div>Chaala Dhifallah</div></div>
+    <div class="second"><div>Frontend Developer</div></div>
+    <div class="third"><div>backend Developper</div></div>
+  </div></div>
 <p> En tant que développeuse frontend passionnée, je crée des expériences web uniques en utilisant des technologies modernes et des techniques de design innovantes. Je suis spécialisée dans le développement d'interfaces utilisateur interactives et réactives en HTML, CSS et JavaScript.
 Avec mes connaissances en développement backend, je suis en mesure de concevoir des sites web dynamiques et performants. Je suis constamment à l'affût des dernières tendances du domaine pour proposer des solutions esthétiques et fonctionnelles.
 Ma véritable passion est de créer des expériences en ligne qui marquent les esprits et qui répondent aux besoins uniques de chaque projet. En travaillant avec moi, vous bénéficierez d'une professionnelle dévouée, soucieuse de la qualité et toujours prête à relever de nouveaux défis.

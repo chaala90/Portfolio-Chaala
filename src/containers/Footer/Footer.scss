@@ -8,6 +8,38 @@
     background-color:#A74A67 ;
     color: #fff;
 }}
+.arrow--up{
+  width: 3%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 3em;
+  border-radius: 50%;
+  opacity: 1;
+  transition: background 0.5s;
+  padding: 0;
+  outline: 0;
+  cursor: pointer;
+  right: 10em;
+  bottom: 6em;
+  border: none;
+  position: absolute;
+  @include mobile-only{
+width: 7%;
+height: 2em;
+right: 1em;
+bottom: 3em;
+  }
+  @include tablet-only{
+    width: 5%;
+    right: 3em;
+    bottom: 5em;
+
+  }
+}
+.icone {
+    color: white;
+    font-size: 1.5em;
+}
+
 i{
   transition: transform 0.4s;
   &:hover{

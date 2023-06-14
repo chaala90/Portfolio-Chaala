@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useData } from "../../containers/context/index";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -20,7 +20,7 @@ const Slider = () => {
           draggable={true}
           focusOnSelect={false}
           infinite={true}
-          customTransition="translateY 300ms ease-in-out"
+          /*customTransition="translateX(-320px) 10s infinite linear"*/
           transitionDuration={500}
           itemClass=""
           keyBoardControl
@@ -63,14 +63,10 @@ const Slider = () => {
           sliderClass=""
           slidesToSlide={1}
           swipeable
-          
-         /* */ // Durée de l'animation de défilement en millisecondes
         >
-
           {data?.donnees?.map((donnee) => (
             <div id="slider" className="border" key={donnee.title}>
               <img className="skills" src={donnee.cover} alt="skills"/>
-              <h3>{donnee.title}</h3>
             </div>
           ))}
         </Carousel>

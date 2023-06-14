@@ -1,3 +1,21 @@
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
  .ListContainer {
         width: 100%;
     /* max-width: 1200px; */
@@ -6,6 +24,7 @@
     flex-wrap: wrap;
     margin-top: 64px;
     margin-bottom: 64px;
+    animation: 5s anim-lineUp ease-in-out forwards;
    
       }
      /* .Title {

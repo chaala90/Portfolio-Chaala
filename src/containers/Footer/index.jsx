@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Footer.scss";
 const Footer = () => {
 	return(
@@ -26,6 +27,13 @@ const Footer = () => {
 </li>
 </ul>
     <p className="copyright"> © 2023 Chaala DHIFALLAH, Tous droits réservés.</p>
+    <Link
+          to="flexlink"
+          spy={true}
+          smooth={true}
+          offset={1}
+          duration={500}
+        ><button aria-label="Go up" class="arrow--up" type="button"><i class="fa-solid fa-chevron-up icone"></i></button></Link>
   </div>
 	)
 	}
