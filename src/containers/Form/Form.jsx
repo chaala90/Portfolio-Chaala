@@ -15,9 +15,9 @@ const Form = ({ onSuccess, onError }) => {
     try {
       await emailjs.sendForm(
         'service_6tgw3oc',
-        'template_w8uoclo',
+        'template_1mxanq8',
         form.current,
-        'tQC2MQP8g-abLkhXt '
+        'tQC2MQP8g-abLkhXt'
       );
 
       setSending(false);

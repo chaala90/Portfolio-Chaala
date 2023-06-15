@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 /*import "./style.scss";*/
 
 export const BUTTON_TYPES = {
@@ -61,8 +61,8 @@ Button.defaultProps = {
   disabled: false,
   onClick: () => null,
   type: BUTTON_TYPES.DEFAULT,
-  title: "",
-  children: null
-}
+  title: '',
+  children: null,
+};
 
 export default Button;

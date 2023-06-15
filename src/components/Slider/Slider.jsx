@@ -1,15 +1,16 @@
-import React from "react";
-import { useData } from "../../containers/context/index";
+import React from 'react';
+import { useData } from '../../containers/context/index';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import "./Slider.scss";
+import './Slider.scss';
 
 const Slider = () => {
   const { data } = useData();
   return (
-      <>
+    <>
       {data && data.donnees && data.donnees.length > 0 && (
         <Carousel
+        
           additionalTransfrom
           arrows
           autoPlaySpeed={1000}
@@ -33,27 +34,27 @@ const Slider = () => {
             desktop: {
               breakpoint: {
                 max: 3000,
-                min: 1024
+                min: 1024,
               },
               items: 5,
-              partialVisibilityGutter: 40
+              partialVisibilityGutter: 40,
             },
             mobile: {
               breakpoint: {
                 max: 464,
-                min: 0
+                min: 0,
               },
               items: 1,
-              partialVisibilityGutter: 30
+              partialVisibilityGutter: 30,
             },
             tablet: {
               breakpoint: {
                 max: 1024,
-                min: 464
+                min: 464,
               },
               items: 4,
-              partialVisibilityGutter: 30
-            }
+              partialVisibilityGutter: 30,
+            },
           }}
           rewind={false}
           rewindWithAnimation={false}
@@ -64,9 +65,9 @@ const Slider = () => {
           slidesToSlide={1}
           swipeable
         >
-          {data?.donnees?.map((donnee) => (
+          {data?.donnees?.map(donnee => (
             <div id="slider" className="border" key={donnee.title}>
-              <img className="skills" src={donnee.cover} alt="skills"/>
+              <img className="skills" src={donnee.cover} alt="skills" />
             </div>
           ))}
         </Carousel>

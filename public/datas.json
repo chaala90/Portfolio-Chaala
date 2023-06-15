@@ -103,7 +103,7 @@
             "type": "HTML-CSS",
             "link":"https://github.com/chaala90/p3-Booki",
             "title": "Booki",
-            "description": "Booki est un projet réalisé dans le cadre de ma formation de Développeur Web chez OpenClassrooms. Il s'agit de réaliser un prototype d'intégration d'une page de site de reservation de logements à partir de maquettes desktop et mobile. \nDévelopper un site web avec HTML5 et CSS3 validé par W3C \nImplémenter une interface responsive \nIntégrer du contenu conformément à une maquette",
+            "description": "Il s'agit de réaliser un prototype d'intégration d'une page de site de reservation de logements à partir de maquettes desktop et mobile. \nDévelopper un site web avec HTML5 et CSS3 validé par W3C \nImplémenter une interface responsive \nIntégrer du contenu conformément à une maquette",
             "cover": "/images/bookio.webp",
             "date": "Octobre 2022"
         },
@@ -112,7 +112,7 @@
             "type": "HTML-CSS",
             "link":"https://github.com/chaala90/P4-ohmyfood",
             "title": "Ohmyfood",
-            "description": "Ohmyfood est un projet réalisé dans le cadre de ma formation de Développeur Web chez OpenClassrooms. L'objectif est de développer un site MobileFirest qui répertorie les menus de restaurants; les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant ! :\nSimplifier le CSS avec Sass \nMettre en oeuvre des effets CSS graphiques avancés\nVersioning avec Git et Github",
+            "description": "L'objectif est de développer un site MobileFirest qui répertorie les menus de restaurants; les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant ! :\nSimplifier le CSS avec Sass \nMettre en oeuvre des effets CSS graphiques avancés\nVersioning avec Git et Github",
             "cover": "/images/ohmyfoodo.webp",
             "date": "Novembre 2022"
         },
@@ -121,7 +121,7 @@
             "type": "javascript",
             "link":"https://github.com/chaala90/P6-Portfolio-architecte-sophie-bluel",
             "title": "Sophie Bluel",
-            "description": "Portfolio photographe Sophie Bluel est un projet réalisé dans le cadre de ma formation de Développeur Web chez OpenClassrooms.  il s'agit de developper la partie front-end du site: \nrecuperer des données depuis une API \ngestion de la connexion de l’utilisateur \nl'ajout et la supprission des données de l'utilisateur ",
+            "description": "Il s'agit de developper la partie front-end du site: \nrecuperer des données depuis une API \ngestion de la connexion de l’utilisateur \nl'ajout et la supprission des données de l'utilisateur ",
             "cover": "/images/sophieo.webp",
             "date": "Janvier 2023"
         },
@@ -139,7 +139,7 @@
             "type": "React",
             "link":"https://github.com/chaala90/P8-kasa",
             "title": "Kasa",
-            "description": "Kasa est un projet réalisé dans le cadre de ma formation de Développeur Web chez OpenClassrooms.  il s'agit de démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) en utilisant en fichier JSON d'annonces de logements ",
+            "description": "Il s'agit de démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) en utilisant en fichier JSON d'annonces de logements ",
             "cover": "/images/Kasao.webp",
             "date": "Mars 2023"
         },
@@ -148,7 +148,7 @@
             "type": "SEO",
             "link":"https://github.com/chaala90/p9-Ninacarducci",
             "title": "Nina Carducci",
-            "description": "Nina Carducci est un projet réalisé dans le cadre de ma formation de Développeur Web chez OpenClassrooms.il s'agit d'analyser l’état actuel de SEO du site fourni et identifier les points d'amélioration: Optimiser le perform nce d'un site web \nOptimiser l'accessibilité' d'un site web \nLe referencement local",
+            "description": "Il s'agit d'analyser l’état actuel de SEO du site fourni et identifier les points d'amélioration: Optimiser le perform nce d'un site web \nOptimiser l'accessibilité' d'un site web \nLe referencement local",
             "cover": "/images/ninacarduccio.webp",
             "date": "Mars 2023"
         },
@@ -157,7 +157,7 @@
             "type": "Débuggage",
             "link":"https://github.com/chaala90/-P10-Debuggez-une-application-React.JS",
             "title": "724Events",
-            "description": "724events est un projet réalisé dans le cadre de ma formation de Développeur Web chez OpenClassrooms.il s'agit d'utiliser des outils pour debugger un site web afin d'assure le bon usage par les visiteurs:  \nanalyser un site web et reparer les bugs \nredaction d'un cahier de recette \nrealisation des tests unitaires et d'integration",
+            "description": "Il s'agit d'utiliser des outils pour debugger un site web afin d'assure le bon usage par les visiteurs:  \nanalyser un site web et reparer les bugs \nredaction d'un cahier de recette \nrealisation des tests unitaires et d'integration",
             "cover": "/images/77eventso.webp",
             "date": "Avril 2023"
         },

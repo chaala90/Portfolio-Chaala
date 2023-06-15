@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import { useState } from "react";
-import "./style.scss";
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+import './style.scss';
 
 const Modal = ({ opened, Content, children }) => {
   const [isOpened, setIsOpened] = useState(opened);
@@ -8,20 +8,20 @@ const Modal = ({ opened, Content, children }) => {
     <>
       {children({ isOpened, setIsOpened })}
       {isOpened && (
-          <div className="overlay">
-        <div className="modal">
-          <div className="content">
-            {Content}
-            <button
-            className="close"
-              type="button"
-              data-testid="close-modal"
-              onClick={() => setIsOpened(false)}
-            >
-              <i className="fa-solid fa-xmark"></i>
-            </button>
+        <div className="overlay">
+          <div className="modal">
+            <div className="content">
+              {Content}
+              <button
+                className="close"
+                type="button"
+                data-testid="close-modal"
+                onClick={() => setIsOpened(false)}
+              >
+                <i className="fa-solid fa-xmark"></i>
+              </button>
+            </div>
           </div>
-        </div>
         </div>
       )}
     </>
@@ -30,12 +30,12 @@ const Modal = ({ opened, Content, children }) => {
 
 Modal.defaultProps = {
   opened: false,
-}
+};
 
 Modal.propTypes = {
   opened: PropTypes.bool,
   Content: PropTypes.node.isRequired,
   children: PropTypes.func.isRequired,
-}
+};
 
 export default Modal;

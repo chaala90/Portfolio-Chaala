@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
-import "./Menu.scss";
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
+import './Menu.scss';
 
 const Menu = () => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -15,7 +15,10 @@ const Menu = () => {
         <h1>dhifallah chaala.</h1>
         <p>Web Developer</p>
       </div>
-      <div id="flexlink" className={`flexLink ${isMenuClicked ? "responsive_nav" : ""}`}>
+      <div
+        id="flexlink"
+        className={`flexLink ${isMenuClicked ? 'responsive_nav' : ''}`}
+      >
         <Link
           to="flexlink"
           className="navbar"
@@ -62,9 +65,15 @@ const Menu = () => {
         </Link>
       </div>
       <div className="burger-menu" onClick={updateMenu}>
-        <div className={`burger-bar ${isMenuClicked ? "clicked" : "unclicked"}`}></div>
-        <div className={`burger-bar ${isMenuClicked ? "clicked" : "unclicked"}`}></div>
-        <div className={`burger-bar ${isMenuClicked ? "clicked" : "unclicked"}`}></div>
+        <div
+          className={`burger-bar ${isMenuClicked ? 'clicked' : 'unclicked'}`}
+        ></div>
+        <div
+          className={`burger-bar ${isMenuClicked ? 'clicked' : 'unclicked'}`}
+        ></div>
+        <div
+          className={`burger-bar ${isMenuClicked ? 'clicked' : 'unclicked'}`}
+        ></div>
       </div>
     </div>
   );

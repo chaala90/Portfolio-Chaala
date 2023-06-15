@@ -1,27 +1,30 @@
-@import "../../containers//endpoints.scss";
+@import '../../containers//endpoints.scss';
 @keyframes defilement-rtl {
   0% {
-    transform: translateX(0);      /* position initiale à droite */
+    transform: translateX(0); /* position initiale à droite */
   }
-  
+
   100% {
-    transform: translateX(-520px);  /* position finale à gauche */
-  }}
-.skills{
+    transform: translateX(-520px); /* position finale à gauche */
+  }
+}
+.skills {
   width: 50%;
   animation: defilement-rtl 10s infinite linear;
   @include mobile-only {
-  margin-left: 4em;
+    margin-left: 4em;
+    width: 35%;
   }
 }
-.border{
-margin-top: 1em;
+.border {
+  margin-top: 1em;
 }
-.border h3{
-margin-left: 2em;
-@include mobile-only {
-margin-left: 8em;
-}}
+.border h3 {
+  margin-left: 2em;
+  @include mobile-only {
+    margin-left: 8em;
+  }
+}
 .react-multi-carousel-list {
   display: flex;
   align-items: center;
@@ -44,7 +47,7 @@ margin-left: 8em;
 .react-multiple-carousel__arrow {
   position: absolute;
   outline: 0;
-  transition: all .5s;
+  transition: all 0.5s;
   border-radius: 35px;
   z-index: 1000;
   border: 0;
@@ -79,7 +82,7 @@ margin-left: 8em;
 }
 
 .react-multiple-carousel__arrow--left::before {
-  content: "\e824";
+  content: '\e824';
 }
 
 .react-multiple-carousel__arrow--right {
@@ -87,7 +90,7 @@ margin-left: 8em;
 }
 
 .react-multiple-carousel__arrow--right::before {
-  content: "\e825";
+  content: '\e825';
 }
 
 .react-multi-carousel-dot-list {
@@ -112,7 +115,7 @@ margin-left: 8em;
   opacity: 1;
   padding: 5px;
   box-shadow: none;
-  transition: background .5s;
+  transition: background 0.5s;
   border-width: 2px;
   border-style: solid;
   border-color: grey;
@@ -137,11 +140,11 @@ margin-left: 8em;
   margin-right: 10px; /* Espacement entre les éléments */
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .react-multi-carousel-item {
     flex-shrink: 0 !important;
   }
-  
+
   .react-multi-carousel-track {
     overflow: visible !important;
   }
@@ -157,7 +160,7 @@ margin-left: 8em;
 }
 
 .rtl.react-multiple-carousel__arrow--right::before {
-  content: "\e824";
+  content: '\e824';
 }
 
 .rtl.react-multiple-carousel__arrow--left {
@@ -166,5 +169,5 @@ margin-left: 8em;
 }
 
 .rtl.react-multiple-carousel__arrow--left::before {
-  content: "\e825";
+  content: '\e825';
 }

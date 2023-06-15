@@ -1,4 +1,4 @@
-@import "src/colors.scss";
+@import 'src/colors.scss';
 
 .inputField {
   display: flex;
@@ -24,8 +24,6 @@ input {
   &:focus {
     color: $primary;
   }
-
-
 }
 textarea {
   height: 336px;
@@ -39,6 +37,4 @@ textarea {
   &:focus {
     color: $primary;
   }
-
- 
 }
