@@ -2,7 +2,12 @@ import React from "react";
 import { Link } from "react-scroll";
 import "./Footer.scss";
 const Footer = () => {
-	return(
+	return(  
+
+
+
+
+    
     <div className="footer" >
       <ul className="socialinks ">
 	            <li className="link">

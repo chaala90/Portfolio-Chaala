@@ -8,9 +8,9 @@ const About = () => {
 <div class="animation">
     <div class="first"><div>Chaala Dhifallah</div></div>
     <div class="second"><div>Frontend Developer</div></div>
-    <div class="third"><div>backend Developper</div></div>
+    <div class="third"><div>backend Developer</div></div>
   </div></div>
-<p> En tant que développeuse frontend passionnée, je crée des expériences web uniques en utilisant des technologies modernes et des techniques de design innovantes. Je suis spécialisée dans le développement d'interfaces utilisateur interactives et réactives en HTML, CSS et JavaScript.
+<p className="aboutme"> En tant que développeuse frontend passionnée, je crée des expériences web uniques en utilisant des technologies modernes et des techniques de design innovantes. Je suis spécialisée dans le développement d'interfaces utilisateur interactives et réactives en HTML, CSS et JavaScript.
 Avec mes connaissances en développement backend, je suis en mesure de concevoir des sites web dynamiques et performants. Je suis constamment à l'affût des dernières tendances du domaine pour proposer des solutions esthétiques et fonctionnelles.
 Ma véritable passion est de créer des expériences en ligne qui marquent les esprits et qui répondent aux besoins uniques de chaque projet. En travaillant avec moi, vous bénéficierez d'une professionnelle dévouée, soucieuse de la qualité et toujours prête à relever de nouveaux défis.
 Faisons équipe pour créer quelque chose d'exceptionnel et mémorable pour votre projet..</p>
@@ -18,9 +18,9 @@ Faisons équipe pour créer quelque chose d'exceptionnel et mémorable pour votr
 <a href={cv} target="_blank" rel="noreferrer">
   <button className="button">Download CV</button>
 </a>
-<ul className="socialinks">
+<ul className="socialink">
 	            <li>
-	            <a href="mailto:chaalaadhif@gmail.com "  target="_blank" rel="noreferrer" >
+	            <a href="mailto:chaalaadhif@gmail.com " target="_blank" rel="noreferrer" >
 	            <i aria-hidden className="fas fa-envelope"></i>
 	            </a>
 	            </li>

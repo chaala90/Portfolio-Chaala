@@ -11,15 +11,17 @@ position: relative;
 color: #e3f2fd;
 font-size: 50px;
 text-align: center;
-margin-top: 64px;
+margin-top: 2em;
 font-family: 'Source Code Pro', monospace;
 text-transform: uppercase;
 letter-spacing: 3px;
 cursor: pointer;
 @include mobile-only {
 font-size: 33px;
+/*margin-top: 5em;*/
 }
 }
+
 h2 span{
   transition: .5s linear;
 }

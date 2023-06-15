@@ -36,7 +36,7 @@ const Page = () => {
       <Collapse />
     </section>
       <section className="EventsContainer">
-      <h2 className="Title" id="nos-realisations"><span>Mes</span> <span>projets</span></h2>
+      <h2 className="Title toproject" id="nos-realisations"><span>Mes</span> <span>projets</span></h2>
         <ProjectList />
       </section>
       <div className="FormContainer" id="contact">

@@ -5,11 +5,11 @@
   }
   
   100% {
-    transform: translateX(-320px);  /* position finale à gauche */
+    transform: translateX(-520px);  /* position finale à gauche */
   }}
 .skills{
   width: 50%;
-  animation: defilement-rtl 20s infinite linear;
+  animation: defilement-rtl 10s infinite linear;
   @include mobile-only {
   margin-left: 4em;
   }

@@ -18,9 +18,9 @@ const ModalProject = ({ project }) => (
       <div className="ModalEvent__descriptionContainer">
         <h3>Description</h3>
         <div className="ModalEvent__description">{project.description}</div>
-        <button onClick={() => window.location.href = project.link} className="custom-button">
-        Click
-      </button>
+        <button onClick={() => window.open(project.link, "_blank")} className="custom-button">
+    Click
+  </button>
       </div>
     </div>
   );
