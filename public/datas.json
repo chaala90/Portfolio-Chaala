@@ -130,7 +130,7 @@
             "type": "Planification",
             "link":"/MenuMakerByQwenta.pdf",
             "title": "Qwenta",
-            "description": "qwenta est un projet réalisé dans le cadre de ma formation de Développeur Web chez OpenClassrooms. il s'agit de Planifier le développement d’un site permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement, en quelques clics.  \nmettre en place une méthodologie de travail agile \ndévelopper un système de veille en redigeant un benchmark digital \ndéterminer les spécifications techniques du site Menu Maker by Qwenta \nrealisation de Kanban pour la planification du projet \nredaction de userStory",
+            "description": "Il s'agit de Planifier le développement d’un site permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement.\nmettre en place une méthodologie de travail agile \ndévelopper un système de veille avec benchmark digital \ndéterminer les spécifications techniques du site \nrealisation de Kanban pour la planification du projet \nredaction de userStory",
             "cover": "/images/qwentao.webp",
             "date": "Fevrier 2023"
         },
@@ -166,7 +166,7 @@
             "type": "React-Redux",
             "link":"https://github.com/chaala90/Oc-P11-ArgentBank-website",
             "title": "ArgentBank",
-            "description": "ArgentBank est un projet réalisé dans le cadre de ma formation de Développeur Web chez OpenClassrooms. Ce projet consiste à créer une application web permettant aux utilisateurs de la plateforme ArgentBank de se connecter et de gérer leurs comptes et profils. Dans une seconde partie du projet, il est demandé de déterminer les endpoints d'API nécessaires pour gérer certaines fonctionnalités pour les transactions.\nS'authentifier à une API\nIntéragir avec une API\nredaction de fichier swagger\nGérer les accès à des routes avec une authentification requise\nImplémenter un gestionnaire d'état(Reduc) dans une application React",
+            "description": "Ce projet consiste à créer une application web permettant aux utilisateurs de se connecter et de gérer leurs comptes en Implémentant Redux et Gérer les accès à des routes avec une authentification requise. Il est demandé de déterminer les endpoints d'API nécessaires pour gérer certaines fonctionnalités pour les transactions.\nredaction de fichier swagger\n",
             "cover": "/images/argentbanko.webp",
             "date": "Mai 2023"
           }
