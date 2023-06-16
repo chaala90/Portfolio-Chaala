@@ -60,7 +60,7 @@
   margin-left: 1em;
   font-weight: 900;
   @include mobile-only {
-    margin: 0.7em 0 -1.5em 1em;
+    margin: 0.9em 0 -0.6em 1em;
   }
   &:hover {
     font-weight: 100;
@@ -128,8 +128,12 @@
   position: fixed;
   top: 2em;
   right: -5em;
+  @include mobile-only {
+    height: 9%;
+    right: -4em;
+    width: 6.5em;
 }
-
+}
 .burger-bar {
   width: 2em;
   height: 0.25em;

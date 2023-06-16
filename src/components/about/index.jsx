@@ -1,6 +1,7 @@
 import './style.scss';
-import cv from './CV chaala.pdf';
+import cv from "./cv Développeur Web.pdf";
 const About = () => {
+  
   return (
     <>
       <div className="container">
@@ -19,19 +20,7 @@ const About = () => {
       </div>
       <p className="aboutme">
         {' '}
-        En tant que développeuse frontend passionnée, je crée des expériences
-        web uniques en utilisant des technologies modernes et des techniques de
-        design innovantes. Je suis spécialisée dans le développement
-        d'interfaces utilisateur interactives et réactives en HTML, CSS et
-        JavaScript. Avec mes connaissances en développement backend, je suis en
-        mesure de concevoir des sites web dynamiques et performants. Je suis
-        constamment à l'affût des dernières tendances du domaine pour proposer
-        des solutions esthétiques et fonctionnelles. Ma véritable passion est de
-        créer des expériences en ligne qui marquent les esprits et qui répondent
-        aux besoins uniques de chaque projet. En travaillant avec moi, vous
-        bénéficierez d'une professionnelle dévouée, soucieuse de la qualité et
-        toujours prête à relever de nouveaux défis. Faisons équipe pour créer
-        quelque chose d'exceptionnel et mémorable pour votre projet..
+        "En tant que développeuse frontend passionnée, je crée des expériences web uniques en utilisant des technologies modernes et des techniques de design innovantes. Spécialisée dans le développement d'interfaces utilisateur interactives et réactives en HTML, CSS et JavaScript, je conçois des sites web dynamiques et performants. Toujours à l'affût des dernières tendances, je propose des solutions esthétiques et fonctionnelles. Ma passion est de créer des expériences en ligne mémorables, adaptées aux besoins de chaque projet. En travaillant avec moi, vous bénéficierez d'une professionnelle dévouée, soucieuse de la qualité et prête à relever de nouveaux défis. Faisons équipe pour créer quelque chose d'exceptionnel et mémorable pour votre projet."
       </p>
       <div className="rowabout">
         <a href={cv} target="_blank" rel="noreferrer">
