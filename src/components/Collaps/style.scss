@@ -1,3 +1,4 @@
+@import '../../containers//endpoints.scss';
 .bloc_descri {
   width: 85%;
   border: none;
@@ -8,9 +9,18 @@
   transition: transform 0.2s;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
   background-color: #282a57;
+  font-weight: 100;
   &:hover {
+    color: #000;
     background-color: transparent;
     box-shadow: 0 0 5px #bbb, 0 0 10px #fff, 0 0 15px #fff;
+  }
+}
+.description p {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  @include mobile-only {
+    font-size: 0.8em;
   }
 }
 .collapse-text,

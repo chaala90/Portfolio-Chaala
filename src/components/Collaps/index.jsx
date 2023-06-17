@@ -1,17 +1,13 @@
-import React, { useState } from "react";
-import { useData } from "../../containers/context/index";
-import "./style.scss";
+import React, { useState } from 'react';
+import { useData } from '../../containers/context/index';
+import './style.scss';
 
 const Collapse = () => {
   const { data } = useData();
-  const [collapseStates, setCollapseStates] = useState([]);
+  const [activeCollapse, setActiveCollapse] = useState(null);
 
-  const handleToggle = (index) => {
-    setCollapseStates((prevState) => {
-      const newState = [...prevState];
-      newState[index] = !newState[index];
-      return newState;
-    });
+  const handleToggle = index => {
+    setActiveCollapse(index === activeCollapse ? null : index);
   };
 
   return (
@@ -19,16 +15,16 @@ const Collapse = () => {
       <div className="bloc_descri">
         <div className="titleCollapse" onClick={() => handleToggle(0)}>
           <h3>Education</h3>
-          {collapseStates[0] ? (
+          {activeCollapse === 0 ? (
             <i className="fa-sharp fa-solid fa-chevron-down ClickToShow" />
           ) : (
             <i className="fa-solid fa-chevron-up ClickToHide" />
           )}
         </div>
-        {collapseStates[0] && (
+        {activeCollapse === 0 && (
           <div className="description rowcollapse">
             {data &&
-              data.educations.map((education) => (
+              data.educations.map(education => (
                 <div key={education.id}>
                   <h4>{education.date}</h4> <p>{education.title}</p>
                   {/*<br />*/}
@@ -40,16 +36,16 @@ const Collapse = () => {
       <div className="bloc_descri">
         <div className="titleCollapse" onClick={() => handleToggle(1)}>
           <h3>Experience</h3>
-          {collapseStates[1] ? (
+          {activeCollapse === 1 ? (
             <i className="fa-sharp fa-solid fa-chevron-down ClickToShow" />
           ) : (
             <i className="fa-solid fa-chevron-up ClickToHide" />
           )}
         </div>
-        {collapseStates[1] && (
+        {activeCollapse === 1 && (
           <div className="description rowcollapse">
             {data &&
-              data.experiences.map((experience) => (
+              data.experiences.map(experience => (
                 <div key={experience.id}>
                   <h4>{experience.date}</h4> <p>{experience.title}</p>
                   <p>{experience.description}</p>

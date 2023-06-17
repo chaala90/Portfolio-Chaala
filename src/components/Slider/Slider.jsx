@@ -10,7 +10,6 @@ const Slider = () => {
     <>
       {data && data.donnees && data.donnees.length > 0 && (
         <Carousel
-        
           additionalTransfrom
           arrows
           autoPlaySpeed={1000}
@@ -44,7 +43,7 @@ const Slider = () => {
                 max: 464,
                 min: 0,
               },
-              items: 1,
+              items: 3,
               partialVisibilityGutter: 30,
             },
             tablet: {
