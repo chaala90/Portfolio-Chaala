@@ -116,13 +116,13 @@
   width: 100%; /* La barre de progression s'étend sur toute la largeur lors du survol */
 }
 .burger-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: fixed;
   @include mobile-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
     right: 10px;
     font-size: 1.25em;
   }
