@@ -65,15 +65,21 @@ const Menu = () => {
         </Link>
       </div>
       <div className="burger-menu" onClick={updateMenu}>
-        <div
-          className={`burger-bar ${isMenuClicked ? 'clicked' : 'unclicked'}`}
-        ></div>
-        <div
-          className={`burger-bar ${isMenuClicked ? 'clicked' : 'unclicked'}`}
-        ></div>
-        <div
-          className={`burger-bar ${isMenuClicked ? 'clicked' : 'unclicked'}`}
-        ></div>
+        {isMenuClicked ? (
+          <span
+            className={`burger-icon ${isMenuClicked ? 'clicked' : 'unclicked'}`}
+          >
+            {' '}
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        ) : (
+          <span
+            className={`burger-icon ${isMenuClicked ? 'clicked' : 'unclicked'}`}
+          >
+            {' '}
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        )}
       </div>
     </div>
   );
