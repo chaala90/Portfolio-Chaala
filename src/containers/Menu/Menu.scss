@@ -116,7 +116,9 @@
   width: 100%; /* La barre de progression s'étend sur toute la largeur lors du survol */
 }
 .burger-menu {
+  display: none;
   @include mobile-only {
+    display: inline-block;
     display: flex;
     flex-direction: column;
     align-items: center;
