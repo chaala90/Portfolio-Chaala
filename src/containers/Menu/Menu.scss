@@ -127,8 +127,9 @@
   top: 2em;
   right: -5em;
   @include mobile-only {
-    height: 9%;
+    height: 10%;
     right: -4em;
+    top: 12px;
     width: 6.5em;
   }
 }
