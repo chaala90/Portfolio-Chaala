@@ -43,7 +43,7 @@ const Slider = () => {
                 max: 464,
                 min: 0,
               },
-              items: 3,
+              items: 1.5,
               partialVisibilityGutter: 30,
             },
             tablet: {
