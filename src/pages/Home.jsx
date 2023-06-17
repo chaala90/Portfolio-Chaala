@@ -35,6 +35,9 @@ const Page = () => {
           </div>
         </section>
         <section>
+          <h2 className="Title toproject " id="nos-realisations">
+            <span>mon</span> <span>parcours</span>
+          </h2>
           <Collapse />
         </section>
         <section className="EventsContainer">
@@ -70,7 +73,8 @@ const Page = () => {
               <div className="ModalMessage--success">
                 <div id="Messageenvoyé">Message envoyé !</div>
                 <p>
-                Merci pour votre message, je tâcherai de vous répondre dans les plus brefs délais.
+                  Merci pour votre message, je tâcherai de vous répondre dans
+                  les plus brefs délais.
                 </p>
               </div>
             }

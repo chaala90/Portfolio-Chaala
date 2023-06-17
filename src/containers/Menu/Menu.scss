@@ -3,7 +3,6 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  /* margin: auto;*/
   font-size: 1.5em;
   height: 5.5em;
 
@@ -70,7 +69,6 @@
     transition: 0.5s linear;
     &:hover {
       color: #bbb;
-      /*font-weight: 100;*/
       text-shadow: 0 0 5px #bbb, 0 0 10px #fff, 0 0 15px #fff;
     }
   }
@@ -132,7 +130,7 @@
     height: 9%;
     right: -4em;
     width: 6.5em;
-}
+  }
 }
 .burger-bar {
   width: 2em;
