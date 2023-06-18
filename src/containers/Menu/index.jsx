@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { useRef } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -6,8 +6,10 @@ import './Menu.scss';
 
 const Menu = () => {
   const navRef = useRef();
+  const [isOpen, setIsOpen] = useState(false);
 
   const showNavbar = () => {
+    setIsOpen(!isOpen);
     navRef.current.classList.toggle('responsive_nav');
   };
   return (
@@ -61,11 +63,19 @@ const Menu = () => {
           <p>CONTACT</p>
           <div className="slider"></div>
         </Link>
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+        <button
+          className="nav-btn nav-close-btn"
+          onClick={showNavbar}
+          style={{ display: isOpen ? 'block' : 'none' }}
+        >
           <FaTimes />
         </button>
       </div>
-      <button className="nav-btn" onClick={showNavbar}>
+      <button
+        className="nav-btn"
+        onClick={showNavbar}
+        style={{ display: isOpen ? 'none' : 'block' }}
+      >
         <FaBars />
       </button>
     </div>

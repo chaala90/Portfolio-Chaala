@@ -4,14 +4,16 @@ $transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
   position: relative;
   color: #1d3557;
   width: 90%;
-  bottom: 35em;
+  bottom: 50em;
   left: 3em;
-  font-size: 1.25em;
+  @include tablet-only {
+    font-size: 1.6em;
+  }
   @include mobile-only {
     color: #fff;
     font-weight: 100;
     margin-left: -2em;
-    width: 90%;
+    width: 98%;
   }
 }
 h1,
@@ -22,14 +24,18 @@ p {
     font-size: 0.6em;
   }
 }
-p {
-  font-weight: bold;
+h1 {
+  font-size: 2em;
   @include mobile-only {
-    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+  }
+}
+p {
+  @include mobile-only {
+    /* font-family: 'Roboto', sans-serif;*/
   }
 }
 .container {
-  /*color: #e5e5e5;*/
   font-size: 1em;
   text-transform: uppercase;
   display: flex;
@@ -104,6 +110,7 @@ p {
 
 .aboutme {
   margin-bottom: 1.5em !important;
+  font-size: 2em;
   letter-spacing: 3px;
   cursor: pointer;
   transition: 0.5s linear;
@@ -111,14 +118,17 @@ p {
     color: #fff;
     text-shadow: 0 0 5px #fff, 0 0 10px #bbb, 0 0 15px #000;
   }
+  @include mobile-only {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
 }
 .button {
   background: #d60040;
   color: white;
   text-transform: uppercase;
-  width: 11rem;
-  font-size: 1em;
-  height: 2.5em;
+  width: 10rem;
+  height: 3em;
   border: none;
   border-radius: 10px;
   cursor: pointer;

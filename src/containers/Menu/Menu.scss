@@ -2,10 +2,9 @@
 .header_nav {
   align-items: center;
   display: flex;
-  /* justify-content: space-between;*/
+  justify-content: space-between;
   font-size: 1.5em;
   height: 5.5em;
-
   @include tablet-only {
     font-size: 1em;
   }
@@ -15,72 +14,79 @@
 }
 .title {
   margin-top: -1.5em;
+  @include mobile-only {
+    margin-top: -1.5em;
+    width: 100%;
+  }
 }
 .title h1 {
   font-family: 'zeyada', cursive;
   font-size: 2em;
   @include mobile-only {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 }
 .title p {
   margin: -2.5em 0px 0 2.5em;
   @include mobile-only {
     font-size: 1em;
-    margin: -2.5em 0px 0 1em;
+    margin: -2em 0px 0 2em;
   }
 }
 .flexLink {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-left: 21em;
+  justify-content: center;
   @include mobile-only {
-    position: fixed;
-    z-index: 1002;
-    font-size: 2em;
+    position: relative;
+    color: #fff;
     top: -100vh;
-    left: 0;
-    height: 177em;
-    width: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    color: #bbb;
-    background-color: black;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    gap: 1.5rem;
+    /* background-color: var(--mainColor);*/
     transition: 1s;
   }
 }
 .nav-btn {
+  cursor: pointer;
   background: transparent;
   border: none;
   outline: none;
-  font-size: 1.5em;
-  color: #eee;
+  color: var(--textColor);
   visibility: hidden;
   opacity: 0;
+  position: absolute;
+  font-size: 1.5em;
+  right: 0;
   @include mobile-only {
-    visibility: visible;
-    opacity: 1;
-    color: black;
-    position: absolute;
-    right: 0;
+    .nav-btn {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
 .responsive_nav {
   @include mobile-only {
     transform: translateY(100vh);
+    position: fixed;
+    z-index: 3;
+    opacity: 0.9;
+    background: black;
   }
 }
 .nav-close-btn {
+  background: transparent;
+  border: none;
+  outline: none;
   @include mobile-only {
     position: absolute;
-    top: 0rem;
+    top: 2rem;
     right: 2rem;
-    visibility: visible;
-    opacity: 1;
-    color: white;
+    box-shadow: none;
+    color: #fff !important;
   }
 }
 .navbar {
@@ -99,6 +105,19 @@
       color: #bbb;
       text-shadow: 0 0 5px #bbb, 0 0 10px #fff, 0 0 15px #fff;
     }
+  }
+}
+.nav-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #eee;
+  visibility: hidden;
+  opacity: 0;
+  @include mobile-only {
+    visibility: visible;
+    opacity: 1;
+    color: black;
   }
 }
 
