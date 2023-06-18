@@ -46,7 +46,6 @@
     height: 100%;
     width: 100%;
     gap: 1.5rem;
-    /* background-color: var(--mainColor);*/
     transition: 1s;
   }
 }
@@ -56,14 +55,14 @@
   border: none;
   outline: none;
   color: var(--textColor);
-  visibility: hidden;
+  display: none;
   opacity: 0;
   position: absolute;
   font-size: 1.5em;
   right: 0;
   @include mobile-only {
     .nav-btn {
-      visibility: visible;
+      display: inline-block;
       opacity: 1;
     }
   }
@@ -112,10 +111,10 @@
   border: none;
   outline: none;
   color: #eee;
-  visibility: hidden;
+  display: none;
   opacity: 0;
   @include mobile-only {
-    visibility: visible;
+    display: inline-block;
     opacity: 1;
     color: black;
   }
