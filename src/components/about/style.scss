@@ -4,7 +4,7 @@ $transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
   position: relative;
   color: #1d3557;
   width: 90%;
-  bottom: 42em;
+  bottom: 35em;
   left: 3em;
   font-size: 1.25em;
   @include mobile-only {
@@ -23,6 +23,7 @@ p {
   }
 }
 p {
+  font-weight: bold;
   @include mobile-only {
     font-family: 'Roboto', sans-serif;
   }

@@ -1,24 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
+import { useRef } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import './Menu.scss';
 
 const Menu = () => {
-  const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const navRef = useRef();
 
-  const updateMenu = () => {
-    setIsMenuClicked(!isMenuClicked);
+  const showNavbar = () => {
+    navRef.current.classList.toggle('responsive_nav');
   };
-
   return (
     <div className="header_nav">
       <div className="title">
         <h1>dhifallah chaala.</h1>
         <p>Web Developer</p>
       </div>
-      <div
-        id="flexlink"
-        className={`flexLink ${isMenuClicked ? 'responsive_nav' : ''}`}
-      >
+      <div id="flexlink" className="flexLink" ref={navRef}>
         <Link
           to="flexlink"
           className="navbar"
@@ -63,24 +61,13 @@ const Menu = () => {
           <p>CONTACT</p>
           <div className="slider"></div>
         </Link>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
+        </button>
       </div>
-      <div className="burger-menu" onClick={updateMenu}>
-        {isMenuClicked ? (
-          <span
-            className={`burger-icon ${isMenuClicked ? 'clicked' : 'unclicked'}`}
-          >
-            {' '}
-            <i class="fa-solid fa-xmark"></i>
-          </span>
-        ) : (
-          <span
-            className={`burger-icon ${isMenuClicked ? 'clicked' : 'unclicked'}`}
-          >
-            {' '}
-            <i class="fa-solid fa-bars"></i>
-          </span>
-        )}
-      </div>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
     </div>
   );
 };
